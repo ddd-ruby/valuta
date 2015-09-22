@@ -40,4 +40,9 @@ scope do
 
     assert_equal("-1,563.654", Valuta.convert(number))
   end
+
+  test "empty" do
+    assert_equal("", Valuta.convert(nil))
+    assert_equal("", Valuta.convert(""))
+  end
 end

@@ -20,6 +20,8 @@ class Valuta
   end
 
   def convert(number)
+    return "" if number.to_s.empty?
+
     prefix = @options[:prefix]
     suffix = @options[:suffix]
 
